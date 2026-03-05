@@ -3,70 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Resume</title>
+    <title>Edgar Hernandez | Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- First Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Second Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<link rel="stylesheet" href="css/styles.css"> <!-- Link to CSS file -->
+
+<body class="body">
     <!-- // Intro -->
-    <header>
-        <img src="your-picture.jpg" alt="Your Name">
-        <h1>Your Name</h1>
-        <h2>Job title or tagline</h2>
-        <p>Add your profile summary here. You can have several paragraphs or add links.</p>
-    </header>
-    
-    <main> 
-        <!-- // Work Experience -->
-        <section>
-            <h2>Work Experience</h2>
-
-            <!-- Job Details: copy this whole block to add more jobs -->
-            <h3>Job title</h3>
-            <p>Company Name</p>
-            <p>Date at job</p>
-            
-            <!-- Add as many paragraphs as you need. -->
-            <p>Job summary.</p>
-            
-            <!-- This list can be deleted if you don't want to use it. -->
-            <p>Optional list:</p>
-            <ul>
-                <li>Created...</li>
-                <li>Lead...</li>
-                <li>Responsible for</li>
-            </ul>
-            <!-- end of Job Details block. -->
-            
+        <header role="banner">
+             <div class="content-wrap">
+                <img src="images/Resume_Picture.png" alt="Edgar Hernandez" class="profile-img column-narrow">
+                <h1>Edgar Hernandez</h1>
+                <h2>Computer Science</h2>
+                <p>Hello, I'm Edgar. My most recent project is currently ISAM Lunaris.</p>
+             </div>
+        </header>
+       
+    <main class="main" role="main" id="main"> 
+        <!-- // Projects -->
+        <section aria-label="Projects">
+            <div class="content-wrap"> <!-- Second part complete -->
+                <div class="column-narrow"> <!-- Added column narrow-->
+                    <!-- Project Details: copy this whole block to add more Projects -->
+                    <h3>Projects</h3>
+                    <h4>ISAM Lunaris</h4>
+                    <p>Fall 2025-Spring 2026</p>
+                    <a href="https://github.com/EdgarHernandez1234/ISAM" target="_blank">Link to repo</a>
+                </div>
+                <div class="column-wide"> <!-- Added column wide-->
+                    <ul>
+                        <li>Apart of a subteam with two other Computer Science students along with a team of Mechanical Engineers specializing in different roles.</li>
+                        <li>Created a low level software system architecture that aligned with the high level architecture my team members had designed.</li>
+                        <li>Lead in a sprint based cycle where I was responsible for leading my team for the duration of my sprint cycle.</li>
+                        <li>Responsible for: Embedded Systems, System Engineering, Software Architecture, Project Management</li>
+                    </ul>
+                </div>
+                <div class="column-narrow">
+                    <h4>Automatic Quiz Generator</h4>
+                    <p>Fall 2025</p>
+                    <a href="https://github.com/ftrbnd/quiz-generator" target="_blank">Link to repo</a>
+                </div>
+                <div class="column-wide"> 
+                    <ul>
+                        <li>Created a list of unit tests for the project based on our product's requirements which I've gathered from our stakeholders</li>
+                        <li>Assisted in assigning the unit tests for each team member in the project</li>
+                        <li>Responsible for: Drafting unit tests, Testing, Gathering user requirements</li>
+                    </ul>
+                </div>
+                <div class="column-narrow">
+                    <h4>Community Garden Management</h4>
+                    <p>Fall 2024</p>
+                    <a href="https://github.com/EdgarHernandez1234/Community-Garden-Management" target="_blank">Link to repo</a>
+                </div>           
+                <div class="column-wide">
+                    <ul>
+                        <li>Created a react native template in github to create a community garden management app</li>
+                        <li>Lead in teaching my team members how to use react native and assigning roles to each team member such as the UI design, backend development, and testing</li>
+                        <li>Responsible for: React Native Development, Project Management</li>
+                    </ul>
+                </div>
+            <!-- end of Projects block. -->  
+            </div>        
         </section>
-
 
         <!-- // Education -->
-        <section>
-            <h2>Education</h2>
-
-            <!-- School details: copy this whole block to add more schools. -->
-            <h3>School name, year you attended</h3>
-            <p>Designation received</p>
-            
-            <!-- Add as many paragraphs as you need. -->
-            <p>Summary.</p>
-            <!-- End of school details. -->
-        </section>
+        <section aria-label="Education">
+            <div class="content-wrap">
+                <h3>Education</h3>
+                <!-- School details: copy this whole block to add more schools. -->
+                <h4>CSUN</h4>
+                <p>Bachelor's Degree in Computer Science, 2022-2026</p>
+                <p>During my time at CSUN, I've completed projects such as Community Garden Management, Automatic Quiz Generator, and ISAM Lunaris.</p>
+                <p>GPA: 3.0</p>
+                <!-- End of school details. -->
+            </div>
+        </section> 
     </main>
-    
-    <!-- // Footer & contact info -->
-    <footer>
-        <h2>Let's Keep in Touch!</h2>
-        
-        <!-- Social media and contact links. Add or remove any networks. -->
-        <div>
-            <a href="mailto:email@example.com">email@example.com</a>
-            <a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a>
-            <a href="#" target="_blank">Twitter</a>
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="#" target="_blank">Facebook</a>
-        </div>
-
-        <p>Copyright 2017 by Your Name</p>
-    </footer>
+        <!-- // Footer & contact info -->
+     
+        <footer class="contentinfo"role="contentinfo" id="footer">
+            <div class="content-wrap">
+                <h2>Let's Keep in Touch!</h2>
+                <!-- Social media and contact links. Add or remove any networks. -->
+                <div>
+                    <a href="mailto:edgar.hernandez.015@my.csun.edu" title="email">edgar.hernandez@csun.edu</a>
+                    <a href="https://github.com/EdgarHernandez1234" target="_blank" title="github">Github Profile</a>
+                    <a href="https://www.linkedin.com/in/edgar-hernandez-172849eh/" target="_blank" title="linkedin">LinkedIn</a>
+                </div>
+                <p>Copyright 2026 by Edgar Hernandez</p>
+            </div>
+        </footer>
 </body>
 </html>
