@@ -10,25 +10,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Second Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to CSS file -->
+    <script src="https://kit.fontawesome.com/2a940c30a2.js" crossorigin="anonymous"></script> <!-- Font Awesome for icons -->
 </head>
-<link rel="stylesheet" href="css/styles.css"> <!-- Link to CSS file -->
 
 <body class="body">
-    <nav>
-        <ul class="nav-list">
-            <a href="#main">Main</a>
+    <nav class="site-nav">
+            <a href="#banner">About</a>
             <a> | </a>
             <a href="#Projects">Projects</a>
             <a> | </a>
-            <a href="#Education"> Education</a>
+            <a href="#Education">Education</a>
             <a> | </a>
-            <a href="#contentinfo"> Contact</a>
+            <a href="#contentinfo">Contact</a>
             <a> | </a>
             <a href="download/Updated_Resume.docx" download>Download</a> <!-- Can download Resume here-->
-        </ul>
     </nav>
     <!-- // Intro -->
-        <header role="banner">
+        <header role="banner" id="banner">
              <div class="content-wrap">
                 <img src="images/Resume_Picture.png" alt="Edgar Hernandez" class="profile-img column-narrow">
                 <h1>Edgar Hernandez</h1>
@@ -85,28 +84,28 @@
         </section>
 
         <!-- // Education -->
-        <section aria-label="Education" id="Education" class="background">
+        <section aria-label="Education" id="Education" class="education">
             <div class="content-wrap">
-                <h3>Education</h3>
+                <h3 class="education h3">Education</h3>
                 <!-- School details: copy this whole block to add more schools. -->
                 <h4>CSUN</h4>
                 <p>Bachelor's Degree in Computer Science, 2022-2026</p>
-                <p>During my time at CSUN, I've completed projects such as Community Garden Management, Automatic Quiz Generator, and ISAM Lunaris.</p>
-                <p>GPA: 3.0</p>
+                <p>During my time at CSUN, I completed projects such as Community Garden Management, Automatic Quiz Generator, and ISAM Lunaris.</p>
+                <p>GPA: 3.0</p>   
                 <!-- End of school details. -->
             </div>
         </section> 
     </main>
         <!-- // Footer & contact info -->
      
-        <footer class="contentinfo"role="contentinfo" id="contentinfo">
+        <footer class="content-info"role="contentinfo" id="contentinfo">
             <div class="content-wrap">
                 <h2>Let's Keep in Touch!</h2>
                 <!-- Social media and contact links. Add or remove any networks. -->
-                <div>
-                    <a href="mailto:edgar.hernandez.015@my.csun.edu" title="email">edgar.hernandez@csun.edu</a>
-                    <a href="https://github.com/EdgarHernandez1234" target="_blank" title="github">Github Profile</a>
-                    <a href="https://www.linkedin.com/in/edgar-hernandez-172849eh/" target="_blank" title="linkedin">LinkedIn</a>
+                <div class="social-icons">
+                    <a href="mailto:edgar.hernandez.015@my.csun.edu" title="email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/EdgarHernandez1234" target="_blank" title="github"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/edgar-hernandez-172849eh/" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
                 <p>Copyright 2026 by Edgar Hernandez</p>
             </div>

@@ -23,8 +23,9 @@ html {
 }
 
 body {
+  padding-top: 60px; /* space for fixed nav */
   font-family: "Gelasio", Arial;
-  background: var(--color-bg);
+  background: var(--color-primary);
   color: var(--color-text);
   margin: 0; /* remove default page margin */
 }
@@ -52,7 +53,7 @@ footer {
   font-size: 14px;
 }
 
-.contact-info a { /* footer links spacing */
+.contact-info{ /* footer links spacing */
   padding: 10px;
   display: inline-block;
 }
@@ -129,6 +130,47 @@ ul {
   margin: 8px 0 0 20px;
   color: var(--color-muted);
 }
-li {
-  margin-bottom: 6px;
+
+ .education h3 { /* For h3 in education section */
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  font-family: "Source Sans 3", sans-serif;
+  margin-top: 0; /* removes extra top spacing inside .content-wrap */
+ }
+
+.education {
+    color: rgba(255, 255, 255, 0.95); /* white text with slight opacity for better contrast against the background */
+  background-image: /* follows additional criteria for background image */
+    linear-gradient(rgba(36, 113, 172, 0.8), rgba(71, 71, 72, 0.4)),
+    url("../images/water.jpg");
+
+  background-repeat: no-repeat; /* prevents tiling of the background image */
+  background-position: center; /* centers the background image within the element */
+  background-size: cover; /* scales the background image to cover the entire element */
+  background-attachment: fixed; /* keeps the background image fixed in place while scrolling */
+}
+
+.site-nav{ /* Navigation bar styles */
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  right: 0;
+  z-index: 1000;
+  padding: 12px 24px;
+  background: var(--color-primary);
+}
+
+.site-nav a { /* nav links */
+  color: #fff;
+  text-decoration: none;
+  margin-right: 12px;
+  display: inline-block;
+}
+.social-icons i {
+  font-size: 48px;   /* to make the icons larger */
+}
+
+.social-icons a {
+  margin-right: 16px; /* spacing */
 }
